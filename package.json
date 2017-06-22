@@ -1,0 +1,24 @@
+{
+  "name": "fuzzy-pancake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwithac/fuzzy-pancake.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwithac/fuzzy-pancake/issues"
+  },
+  "homepage": "https://github.com/cwithac/fuzzy-pancake#readme"
+}

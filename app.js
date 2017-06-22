@@ -3,8 +3,8 @@ var moment = require ('moment');
 var fs     = require ('fs');
 
 //CUSTOMIZABLES
-var startDate = '20170306'; //year, month (2 digits), day (2 digits)
-var zoom = 'https://generalassembly.zoom.us/j/594235178'
+var startDate = '20170626'; //year, month (2 digits), day (2 digits)
+var zoom = 'https://generalassembly.zoom.us/j/364840357'
 
 
 //BUILDING BLOCKS
@@ -43,7 +43,7 @@ for (let i = 1; i <= 14; i++){
 // console.log(superMessage)
 
 //save it to a plain text file, not multiple calls will add to the file, not replace it
-fs.writeFile("./test",
+fs.writeFile("./gizmo-afternoon",
 superMessage, function(err){
   if(err){
     return console.log(err);

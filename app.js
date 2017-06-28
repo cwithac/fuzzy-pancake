@@ -4,7 +4,7 @@ var fs     = require ('fs');
 
 //CUSTOMIZABLES
 var startDate = '20170626'; //year, month (2 digits), day (2 digits)
-var zoom = 'https://generalassembly.zoom.us/j/364840357'
+var zoom = 'https://generalassembly.zoom.us/s/663947664'
 
 
 //BUILDING BLOCKS
@@ -28,7 +28,7 @@ for (let i = 1; i <= 14; i++){
     day = j;
     //Build the Message
     message = "\n" +banner;
-    message += "Good Afternoon'!\n\n";
+    message += "Good Morning!\n\n";
     message += "W" + week + "D"+ j +"\n";
     message += moment(nextDate.toString()).format('dddd, MMMM Do YYYY');
     message += "\n"
@@ -43,7 +43,7 @@ for (let i = 1; i <= 14; i++){
 // console.log(superMessage)
 
 //save it to a plain text file, not multiple calls will add to the file, not replace it
-fs.writeFile("./gizmo-afternoon",
+fs.writeFile("./gizmo-morning",
 superMessage, function(err){
   if(err){
     return console.log(err);

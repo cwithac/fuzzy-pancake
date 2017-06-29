@@ -4,7 +4,7 @@ var fs     = require ('fs');
 
 //CUSTOMIZABLES
 var startDate = '20170626'; //year, month (2 digits), day (2 digits)
-var zoom = 'https://generalassembly.zoom.us/s/663947664'
+var zoom = 'https://generalassembly.zoom.us/j/663947664'
 
 
 //BUILDING BLOCKS

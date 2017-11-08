@@ -1,10 +1,10 @@
 //DEPENDENCIES
-var moment = require ('moment');
-var fs     = require ('fs');
+const moment = require ('moment');
+const fs     = require ('fs');
 
 //CUSTOMIZABLES
-var startDate = '20170626'; //year, month (2 digits), day (2 digits)
-var zoom = 'https://generalassembly.zoom.us/j/663947664'
+const startDate = '20171023'; //year, month (2 digits), day (2 digits)
+const zoom = 'https://generalassembly.zoom.us/j/598877415'
 
 
 //BUILDING BLOCKS
@@ -28,6 +28,7 @@ for (let i = 1; i <= 14; i++){
     day = j;
     //Build the Message
     message = "\n" +banner;
+    // message += "Good Morning!\n\n";
     message += "Good Afternoon!\n\n";
     message += "W" + week + "D"+ j +"\n";
     message += moment(nextDate.toString()).format('dddd, MMMM Do YYYY');
@@ -43,7 +44,8 @@ for (let i = 1; i <= 14; i++){
 // console.log(superMessage)
 
 //save it to a plain text file, not multiple calls will add to the file, not replace it
-fs.writeFile("./gizmo-afternoon",
+// fs.writeFile("./spaceghost-morning",
+fs.writeFile("./spaceghost-afternoon",
 superMessage, function(err){
   if(err){
     return console.log(err);

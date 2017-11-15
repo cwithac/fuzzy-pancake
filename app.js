@@ -28,8 +28,8 @@ for (let i = 1; i <= 14; i++){
     day = j;
     //Build the Message
     message = "\n" +banner;
-    // message += "Good Morning!\n\n";
-    message += "Good Afternoon!\n\n";
+    message += "Good Morning!\n\n";
+    // message += "Good Afternoon!\n\n";
     message += "W" + week + "D"+ j +"\n";
     message += moment(nextDate.toString()).format('dddd, MMMM Do YYYY');
     message += "\n"
@@ -44,8 +44,8 @@ for (let i = 1; i <= 14; i++){
 // console.log(superMessage)
 
 //save it to a plain text file, not multiple calls will add to the file, not replace it
-// fs.writeFile("./spaceghost-morning",
-fs.writeFile("./spaceghost-afternoon",
+fs.writeFile("./spaceghost-morning",
+// fs.writeFile("./spaceghost-afternoon",
 superMessage, function(err){
   if(err){
     return console.log(err);
